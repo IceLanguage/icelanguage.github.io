@@ -1,3 +1,12 @@
+---
+layout: post
+title: LeetCode stringstream分割字符并完成类型转换
+category: c++ LeetCode stringstream SplitcharactersTypeconversion
+tag: C++ LeetCode stringstream Split characters Type conversion 分割字符 类型转换
+comments: false
+---
+
+
 LeetCode上看到了一个非常牛逼的技巧，可以轻松分割不同的字符，并完成类型转换，那就是stringstream
 [原题](https://leetcode.com/problems/complex-number-multiplication/description/)
 [原题解答](https://discuss.leetcode.com/topic/84382/c-using-stringstream%20%E5%8E%9F%E9%A2%98%E8%A7%A3%E7%AD%94)
