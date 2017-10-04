@@ -1,0 +1,15 @@
+- title: <span class="icon-home"/>
+  url: "/"
+  side: left
+
+- title: "简历"
+  url: "/cv/"
+  side: right
+
+- title: "博客"
+  url: "/blog/"
+  side: left
+
+- title: "作品"
+  url: "/project/"
+  side: left
