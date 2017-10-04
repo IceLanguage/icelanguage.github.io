@@ -116,7 +116,7 @@ disqus:
 #################################### global configure #######################################
 
 username: IceLanguage
-baseurl: /StrayBirds
+baseurl: /icelanguage.github.io
 markdown: redcarpet
 safe: false
 highlighter: pygments
