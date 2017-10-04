@@ -2,16 +2,7 @@
 layout: post
 title: unity unity Dictionary序列化和反序列化及XML本地数据存储
 category: unity Xml DictionarySerializationDeserializationAndSave
-tag: 
--unity 
--Xml 
--Dictionary 
--Serialization 
--Deserialization 
--Save 
--本地数据存储 
--序列化 
--反序列化
+tag: unity Xml Dictionary Serialization Deserialization Save 本地数据存储 序列化 反序列化
 comments: false
 ---
 
