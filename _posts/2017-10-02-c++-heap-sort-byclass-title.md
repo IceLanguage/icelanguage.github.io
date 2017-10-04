@@ -8,7 +8,7 @@ comments: false
 
 程序不当之处，欢迎指正
 
-```
+```C++
 // HeapSort.cpp: 定义控制台应用程序的入口点。
 #include "stdafx.h"
 #include <vector>
