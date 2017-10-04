@@ -5,9 +5,10 @@ category:
     - blog
 ---
 
-程序不当之处，欢迎指正
+**程序不当之处，欢迎指正**
+--------------
 
-```cpp
+~~~cpp
 // HeapSort.cpp: 定义控制台应用程序的入口点。
 #include "stdafx.h"
 #include <vector>
@@ -185,4 +186,4 @@ int main()
 }
 
 
-```
+~~~
