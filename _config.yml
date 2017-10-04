@@ -115,7 +115,7 @@ disqus:
 
 #################################### global configure #######################################
 
-username: minixalpha
+username: IceLanguage
 baseurl: /StrayBirds
 markdown: redcarpet
 safe: false
