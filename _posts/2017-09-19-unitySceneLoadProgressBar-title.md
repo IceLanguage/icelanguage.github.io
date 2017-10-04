@@ -1,7 +1,15 @@
+---
+layout: post
+title: 场景加载环形进度条
+category: unity UI SceneLoadProgressBar
+tag: unity UI SceneLoad ProgressBar 场景加载 进度条 环形
+comments: false
+---
+
 **UIManager**
 负责UI
 
-```
+```java
 public class UIManager : MonoBehaviour {
 
     public static UIManager _instance;
@@ -20,7 +28,7 @@ public class UIManager : MonoBehaviour {
 **LoadScene**
 负责场景加载
 
-```
+```java
 public class LoadScene : MonoBehaviour {
 
     public static LoadScene _instance;
@@ -56,7 +64,7 @@ public class LoadScene : MonoBehaviour {
 
 **circleProcess**
 环形进度条控件逻辑
-```
+```java
 using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;

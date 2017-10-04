@@ -1,4 +1,12 @@
-```
+---
+layout: post
+title: unity神奇的效果:角色随机移动
+category: unity Physic PlayerRandomMove
+tag: unity Physic Player Random Move 神奇 效果 随机移动
+comments: false
+---
+
+```java
  Vector3 velocity = Vector3.zero;//速度
  float speed = 5;
 private void Update()

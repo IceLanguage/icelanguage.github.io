@@ -1,4 +1,12 @@
-```
+---
+layout: post
+title: unity围绕主角的摄像头视角控制
+category: unity Camera ArroundPlayer
+tag: unity Camera ArroundPlayer 围绕主角 摄像头 视角控制
+comments: false
+---
+
+```java
 public GameObject player;
     //自身旋转的速度  
     private static float ax = 0;

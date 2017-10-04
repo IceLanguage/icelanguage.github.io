@@ -1,10 +1,18 @@
+---
+layout: post
+title: unity unity Dictionary序列化和反序列化及XML本地数据存储
+category: unity Xml DictionarySerializationDeserializationAndSave
+tag: unity Xml Dictionary Serialization Deserialization Save 本地数据存储 序列化 反序列化
+comments: false
+---
+
 直接上代码
 
 **首先是XML形式存储本地数据**
 --------------
 
 **XMLManager**类
-```
+```java
 using System;
 using System.IO;
 using System.Security.Cryptography;
@@ -156,7 +164,7 @@ public class XMLManager{
 相比PlayerPrefs，能存储自定义数据结构的数据
 如
 
-```
+```java
 public class User
 {
 	private string name;
@@ -168,7 +176,7 @@ public class User
 **xml存储和反序列化获取方法**
 --------------
 
-```
+```java
  public static string dataPathSave = "F:/unityLearning/Assets/Save/";//路径
  
   public static List<user> userList = new List<user>();
@@ -183,7 +191,7 @@ public class User
 **Dictionary序列化和反序列化**
 之前提到dictionary不能成功，所有有了下面的方法
 **DictionaryXML**
-```
+```java
 using System;
 using System.Collections.Generic;
 using System.Runtime.Serialization;
@@ -297,7 +305,7 @@ public class DictionaryXML
 
 **调用**
 
-```
+```java
  public static DictionaryXML.SerializableDictionary<string, user> Dic = new DictionaryXML.SerializableDictionary<string, user>();//不能是 public static Dictionary<string, user> Dic = new Dictionary<string, user>();
 
 //存储
