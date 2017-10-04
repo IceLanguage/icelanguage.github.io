@@ -119,7 +119,7 @@ username: IceLanguage
 baseurl: /icelanguage.github.io
 markdown: redcarpet
 safe: false
-highlighter: rouge
+highlighter: pygments
 title: 寂灭万乘
 description: 让创造虚拟世界的代码沸腾我的心吧
 theme: slate

@@ -11,7 +11,7 @@ LeetCode上看到了一个非常牛逼的技巧，可以轻松分割不同的字
 [原题](https://leetcode.com/problems/complex-number-multiplication/description/)
 [原题解答](https://discuss.leetcode.com/topic/84382/c-using-stringstream%20%E5%8E%9F%E9%A2%98%E8%A7%A3%E7%AD%94)
 
-```
+```ruby
 Input: "1+1i", "1+1i"
 Output: "0+2i"
 Explanation: (1 + i) * (1 + i) = 1 + i2 + 2 * i = 2i, and you need convert it to the form of 0+2i.
@@ -19,7 +19,7 @@ Explanation: (1 + i) * (1 + i) = 1 + i2 + 2 * i = 2i, and you need convert it to
 原题是给2个复数和负号组成的字符串，要求返回字符串形态的解答，这种方法极大简化了操作
 
 以下是解答
-```
+```java
 class Solution {
 public:
     string complexNumberMultiply(string a, string b) {
