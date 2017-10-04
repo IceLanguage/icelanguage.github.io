@@ -1,13 +1,14 @@
 ---
 layout: post
 title: CLRS c++完整堆排序以类结构实现
-category: 技术
-comments: true
+category: c++ CLRS hashSortByClass
+tag: C++ hashSort Class CLRS
+comments: false
 ---
 
 程序不当之处，欢迎指正
 
-```
+```C
 // HeapSort.cpp: 定义控制台应用程序的入口点。
 #include "stdafx.h"
 #include <vector>
