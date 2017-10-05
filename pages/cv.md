@@ -5,7 +5,7 @@ title: "林豪 Icelanguage"
 subheadline: "简历"
 permalink: "/cv/"
 header:
-    image_fullwidth: front02.jpg
+    image_fullwidth: front04.jpg
 ---
 
 ## 教育
