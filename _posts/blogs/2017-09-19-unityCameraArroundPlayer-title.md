@@ -2,7 +2,7 @@
 layout: page
 title: unity围绕主角的摄像头视角控制
 category: 
-    - blog
+    - blogs
 ---
 
 ~~~cs

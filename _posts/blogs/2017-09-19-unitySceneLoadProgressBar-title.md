@@ -2,7 +2,7 @@
 layout: page
 title: 场景加载环形进度条
 category: 
-    - blog
+    - blogs
 ---
 **UIManager**
 负责UI
