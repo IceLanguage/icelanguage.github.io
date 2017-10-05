@@ -4,6 +4,8 @@ show_meta: false
 title: "林豪 Icelanguage"
 subheadline: "简历"
 permalink: "/cv/"
+header:
+    image_fullwidth: front02.jpg
 ---
 
 ## 教育
