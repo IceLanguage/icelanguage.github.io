@@ -4,7 +4,7 @@ title: 深入理解不同的二分查找C++
 category: 
     - blogs
 header:
-    image_fullwidth: (http://img.blog.csdn.net/20171006184026918?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMzQyNDQzMTc=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
+    image_fullwidth: http://img.blog.csdn.net/20171006184026918?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMzQyNDQzMTc=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast
 
 ---
 
@@ -13,7 +13,7 @@ header:
 以任一元素S[mid] = x为界，都可将区间分为三部分，且根据此时的有序性必有：
 S[low, mid) <= S[mid]<=  S(mid, high)
 ![这里写图片描述](http://img.blog.csdn.net/20171006182815612?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMzQyNDQzMTc=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
-```
+```cpp
 // 二分查找算法（版本A）：在有序向量区间[low, high)内查找元素e，0 <= low<high<size
 
 while (low < high) { //每步迭代可能要做两次比较判断，有三个分支
@@ -43,7 +43,7 @@ while (low < high) { //每步迭代可能要做两次比较判断，有三个分
 找；否则，深入后端子向量A[mid, high)继续查找
 ![这里写图片描述](http://img.blog.csdn.net/20171006183035065?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMzQyNDQzMTc=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
 
-```
+```lua
 while (1 < high - low) { //迭代仅需做一次比较刞断，有两个分支；成功查找到能提前终止
 	int mid = (low + high) >> 1; //以中点为轴点
 	(e < A[mid]) ? high = mid : low = mid; //经比较后确定深入[low, mid)或[mid, high)
@@ -58,7 +58,7 @@ while (1 < high - low) { //迭代仅需做一次比较刞断，有两个分支�
 每次转入后端分支时，子向量的左边界取作mid + 1而不是mid
 循环结束之后，无论成功与否，只需返回low - 1即可
 效率进一步提高
-```
+```java
 while (low < high) { //迭代仅需做一次比较判断，有两个分支
 	int mid = (low + high) >> 1; //以中点为轴点
 	(e < A[mid]) ? high = mid : low = mid + 1; //经比较后确定深入[low, mid)或(mid, high)
