@@ -3,8 +3,6 @@ layout: page
 title: 深入理解不同的二分查找C++
 category: 
     - blogs
-header:
-    image_fullwidth: header_twofind.jpg
 ---
 
 **二分查找（版本A）**
