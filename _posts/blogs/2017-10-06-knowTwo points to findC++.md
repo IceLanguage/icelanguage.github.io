@@ -1,3 +1,13 @@
+---
+layout: page
+title: 深入理解不同的二分查找C++
+category: 
+    - blogs
+header:
+    image_fullwidth: (http://img.blog.csdn.net/20171006184026918?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMzQyNDQzMTc=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
+
+---
+
 **二分查找（版本A）**
 ---------
 以任一元素S[mid] = x为界，都可将区间分为三部分，且根据此时的有序性必有：
