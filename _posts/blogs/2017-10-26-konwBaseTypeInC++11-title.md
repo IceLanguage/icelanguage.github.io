@@ -209,12 +209,12 @@ const char *cstr=0;//指向const char的指针，2者不一样
 auto类型说明符能让编译器替我们分析表达式所属的类型
 使用auto时需要注意auto在一个语句能声明多个变量，但只能有一个基本数据类型
 ~~~cs
-auto i =0，*p =&i;//i是整数，p是整型指针
+auto i =0,*p =&i;//i是整数，p是整型指针
 auto a=0,b=9.3;//这是错误的，a，b类型需一致
 ~~~
 auto会忽略顶层const，底层const会被保留下来
 ~~~cs
-auto i =0，*p =&i;
+auto i =0,*p =&i;
 const int c =i,&d =c;
 auto e =c;//e是个整数，顶层const被忽略
 auto f =d;//f是个整数，d是c的别名，c是个顶层const
