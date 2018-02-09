@@ -1,9 +1,9 @@
-﻿
----
+﻿---
 layout: page
 title: Unity单例模式泛型类
     - blogs
 ---
+
 ```
 public class UnitySingleton<T> : MonoBehaviour  
     where T : Component  

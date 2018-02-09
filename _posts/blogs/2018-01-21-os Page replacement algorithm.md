@@ -1,5 +1,4 @@
-﻿
----
+﻿---
 layout: page
 title: 操作系统篇-页面置换算法c/c++实现
     - blogs
