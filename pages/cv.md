@@ -10,7 +10,7 @@ header:
 
 ## 联系方式
 
-|      |      |
+|联系方式|      |
 | ---- | ---- |
  手机号| 13738576895
    qq  | 845854051
@@ -18,10 +18,10 @@ header:
  微信号| duguyuanmo
 
 ## 个人信息
-|      |      |
+|联系方式|      |
 | ---- | ---- |
-姓名| 林豪
-性别| 男
+姓名   | 林豪
+性别   |男
 工作年限|应届生
 技术博客|www.millionsmultiplication.top, http://blog.csdn.net/qq_34244317
 Github|https://github.com/IceLanguage
