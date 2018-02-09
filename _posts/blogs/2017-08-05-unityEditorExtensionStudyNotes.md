@@ -12,7 +12,7 @@ title: unity编辑器扩展学习笔记
 
 
 （一）MenuItem添加菜单按钮
-```
+```cs
 [MenuItem("tools/test")]
     static void test()
     {
@@ -25,7 +25,7 @@ title: unity编辑器扩展学习笔记
 
 （二）菜单优先级
 
-```
+```java
 [MenuItem("tools/test", false, 444)]
     static void test()
     {
@@ -52,7 +52,7 @@ title: unity编辑器扩展学习笔记
 
 （三）project右键菜单
 
-```
+```Cpp
 [MenuItem("Assets/test2", false, 3444)]
     static void test2()
     {
@@ -66,7 +66,7 @@ title: unity编辑器扩展学习笔记
 
 （四）inspect某组件区域右键菜单
 
-```
+```pytghon
  [MenuItem("CONTEXT/PlayerHealth/InitHealthAndSpeed")]// CONTEXT 组件名 按钮名
     static void InitHealthAndSpeed()
     {
@@ -78,7 +78,7 @@ title: unity编辑器扩展学习笔记
 
 
 以下方法可获取到操作的组件
-```
+```lua
 [MenuItem("CONTEXT/PlayerHealth/InitHealthAndSpeed")]// CONTEXT 组件名 按钮名
     static void InitHealthAndSpeed( MenuCommand cmd )//menucommand是当前正在操作的组件
     {
@@ -91,7 +91,7 @@ title: unity编辑器扩展学习笔记
 ```
 （五）获取选择物体，进行操作
 
-```
+```ruby
  [MenuItem("GameObject/my delete", true, 11)]
     static bool MyDeleteValidate()
     {
@@ -105,7 +105,7 @@ title: unity编辑器扩展学习笔记
 
 删除选择物体
 
-```
+```perl
 [MenuItem("GameObject/my delete", false, 11)]
     static void Mydelete()
     {
@@ -119,7 +119,7 @@ title: unity编辑器扩展学习笔记
 ```
 （六）快捷键
 
-```
+```php
 [MenuItem("Tools/test2 %q",false,100)]//快捷键为ctrl+q
     static void Test2()
     {
@@ -134,7 +134,7 @@ title: unity编辑器扩展学习笔记
 
 （七）菜单是否可用
 
-```
+```net
 [MenuItem("GameObject/my delete", true, 11)]//true时无法点击
     static bool MyDeleteValidate()//验证方法，会最先执行该方法，返回true才能执行其他方法
     {
@@ -148,7 +148,7 @@ title: unity编辑器扩展学习笔记
 不是在Editor下，而是在组件里
 ContextMenu组件区域右键点击
 
-```
+```javascript
 [ContextMenu("SetColor")]
         void SetColor()
         {
@@ -156,7 +156,7 @@ ContextMenu组件区域右键点击
         }
 ```
 ContextMenuItem是给某组件某个属性右键点击添加菜单
-```
+```vb
 [ContextMenuItem("Add Hp","AddHp")] //Add Hp为菜单名称
 void AddHp()
         {
@@ -165,7 +165,7 @@ void AddHp()
 ```
 （八）对话框
 创建对话框
-```
+```css
 public class EnemyChange : ScriptableWizard {//必须继承ScriptableWizard
 
     [MenuItem("Tools/CreateWizard")]
@@ -177,7 +177,7 @@ public class EnemyChange : ScriptableWizard {//必须继承ScriptableWizard
 
 检测对话框按钮点击
 
-```
+```html
  //检测create按钮的点击
     void OnWizardCreate()
     {
@@ -185,30 +185,30 @@ public class EnemyChange : ScriptableWizard {//必须继承ScriptableWizard
     }
 ```
 
-```
+```ruby
 //当前对话框字段值修改的时候会被调用
     void OnWizardUpdate()
     {
 ```
 对话框第二个按钮
 
-```
+```cs
 ScriptableWizard.DisplayWizard<EnemyChange>("统一修改敌人","Change And Close","Change");//change为第二个button
 ```
 第二个button的点击事件，other button 不同于第一个button，点击后不会自动关闭对话框
-```
+```cs
 void OnWizardOtherButton()
 ```
 
 （九）记录操作，以便撤销
 
-```
+```cs
   Undo.RecordObject(hp, "change health and speed");
   
 ```
 （十）显示提示信息
 
-```
+```cs
 void OnWizardCreate()
     {
 
@@ -217,12 +217,12 @@ void OnWizardCreate()
 ```
 （十一）保存数据
 
-```
+```cs
   EditorPrefs.SetInt(changeStartHealthValueKey, changeStartHealthValue);//第一个参数是key，第二个是保存的值
 ```
 （十二）进度条
 
-```
+```cs
   void OnWizardCreate()
     {
         GameObject[] enemyPrefabs = Selection.gameObjects;
@@ -239,13 +239,13 @@ void OnWizardCreate()
         }
 ```
 
-```
+```cs
   EditorUtility.DisplayProgressBar("进度", "0/" + enemyPrefabs.Length + " 完成修改值", 0);
   
 ```
 （十三）自定义窗口
 必须继承EditorWindow
-```
+```c
 public class MyWindow : EditorWindow {
 
     [MenuItem("Window/show mywindow")]
