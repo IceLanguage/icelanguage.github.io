@@ -3,9 +3,8 @@ layout: page
 title: 官方序列化接口 ISerializationCallbackReceiver
 ---
 
-
+#~
 ----------
-[TOC]
 
 ##简介
 在unity中，序列化一直是个很头疼的问题，尽管官方支持了许多类型，但一些自定义类型和常用，比如Dictionary不能序列化，让人大呼头疼。不过幸运的是，ISerializationCallbackReceiver的出现解决了这个问题。
