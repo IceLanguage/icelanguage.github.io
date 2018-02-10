@@ -105,7 +105,7 @@ SON(JavaScript Object Notation) 是一种轻量级的数据交换格式。它基
 
 这里使用unity自带JsonUtility，
 unity提供了ISerializationCallbackReceiver便于我们编写序列化类
-```
+```java
 [Serializable]
 public class SerializationDictionary<TKey, TValue> : ISerializationCallbackReceiver
 {
@@ -161,7 +161,7 @@ public class SerializationDictionary<TKey, TValue> : ISerializationCallbackRecei
 ### 读写
  
 json文件的读写速度相比ScriptableObject慢一些，但比xml快，文件大小比ScriptableObject大一些，比xml小
-```
+```java
 SerializationDictionary<int, Skill> sDictionary = new SerializationDictionary<int, Skill>();
             sDictionary.Target = allSkillDic;
 
@@ -182,7 +182,7 @@ LitJson是一个开源项目，可以简化序列化工作，不需要为每个�
 具体使用
 去github找下下载，把LitJson文件下的cs文件集成一个类库项目，编译成dll，再通过unity的Import New Asset导入到项目中就能使用
 
-```
+```java
             Dictionary<string, Skill> dic = new Dictionary<string, Skill>() ;
             foreach (var  o in allSkillDic)
             {
@@ -206,7 +206,7 @@ LitJson是一个开源项目，可以简化序列化工作，不需要为每个�
  优点：灵活，不需要和json字段一对一
  
  使用
-```
+```java
  string json = JsonConvert.SerializeObject(allSkillDic);
             string path = Application.dataPath + "/Resources/PokemonSkills.json";
             File.WriteAllText(path, json, Encoding.UTF8);
@@ -225,7 +225,7 @@ xml解析速度相当慢，文件也相当大，可读性强，在编写编辑�
 这里使用系统自带的xml解析,需要编写复杂的序列化类
 首先需要继承Dictionary<TKey,TValue>并编写繁琐的构造函数，这是为了  XmlSerializer对象构造时提供正确的类型
 还要继承IXmlSerializable接口编写对应的方法
-```
+```java
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -326,7 +326,7 @@ public class XmlDictionary<TKey,TValue>:Dictionary<TKey,TValue>, IXmlSerializabl
 ```
 ### 读写
 
-```
+```cs
  string path = Application.dataPath + "/Resources/";
             XmlDictionary<int, Skill> xmlDictionary = new XmlDictionary<int, Skill>(allSkillDic);
             using (FileStream fileStream = new FileStream(path+ "PokemonSkills.xml", FileMode.Create))

@@ -10,10 +10,12 @@ title: unity和序列化和反序列
 [TOC]
 
 
-##简介
+## 简介
+
 所谓序列化就是将对象转换为字节流，反序列化则是字节流转换回对象
 
-##C#完成序列化和反序列化
+## C#完成序列化和反序列化
+
 序列化
 Serialize方法会利用反射机制查看对象类型含有的字段，因为之后要对这些字段序列化，同时还有分辨对象是否已被序列化（一个对象只能序列化一次，否则会死循环）。
 ```
@@ -209,7 +211,8 @@ public class TestSer : MonoBehaviour
     }
 }
 ```
-##如何控制类型可序列化
+## 如何控制类型可序列化
+
 那就是使用特性[Serializable]
 只有使用了这个特性类，结构体类型才能被序列化
 ```
@@ -280,7 +283,8 @@ private void Cal(StreamingContext context)
 反序列类同
 1.先调用OnDeserializing特性标记的方法
 2.然后反序列所有字段
-##序列化，反序列化中上下文
+## 序列化，反序列化中上下文
+
 OnSerializing和OnDeserializing特性方法需要使用StreamingContext参数
 这边是结构体流的上下文
 它包含了序列化的来源地，目的地等诸多信息
@@ -310,20 +314,24 @@ OnSerializing和OnDeserializing特性方法需要使用StreamingContext参数
       
     }
 ```
-##unity中的序列化和反序列化
+## unity中的序列化和反序列化
+
 Inspect显示的数据是经过序列化得到
 prefab，场景文件实际是序列化后的二进制文件
 Instantiate实际上是反序列化的过程
 unity场景资源的垃圾回收机制（不同于C#的GC机制）是利用了序列化的机制
-##unity中序列化的注意事项
+## unity中序列化的注意事项
+
 1.最好public或使用了[SerializdField]
 2.不是静态static的
 3.不是const，readonly的
 4.类型必须可被序列化
 unity只能序列化类，结构体，UnityEngine.object,Array,List<T>,C#基元类型
-##自定义序列化
+## 自定义序列化
+
 受限unity序列化机制，有些自定义类型需要我们开发者编写可序列化中间结构或类代替自定义类型序列化和反序列化
-##序列化和反序列内部过程
+## 序列化和反序列内部过程
+
 格式器序列化
 第一步
 返回MemberInfo类型对象构成的数组

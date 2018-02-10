@@ -3,14 +3,13 @@ layout: page
 title: 官方序列化接口 ISerializationCallbackReceiver
 ---
 
-#~
-----------
+## 简介
 
-##简介
 在unity中，序列化一直是个很头疼的问题，尽管官方支持了许多类型，但一些自定义类型和常用，比如Dictionary不能序列化，让人大呼头疼。不过幸运的是，ISerializationCallbackReceiver的出现解决了这个问题。
 
 
-##官方提供的解决方案
+## 官方提供的解决方案
+
 编写一个类继承ISerializationCallbackReceiver接口，通过编写2个回调让List类型代替Dictionary参与序列化
 ```
 using UnityEngine;
@@ -53,9 +52,10 @@ public class SerializationCallbackScript : MonoBehaviour, ISerializationCallback
 }
 ```
 
-##Dictionary的序列化的泛型解决方案
+## Dictionary的序列化的泛型解决方案
+
 但我们在unity使用Dictionary实在太频繁，不可能为每个类继承接口编写回调，一位牛人使用泛型编程为我们解决了这个问题
-```
+```cs
 public class SerializationDictionary<TKey, TValue> : ISerializationCallbackReceiver
 {
     [SerializeField]
