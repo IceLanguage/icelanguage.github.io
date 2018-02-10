@@ -1,12 +1,8 @@
 ﻿---
 layout: page
 title: 官方序列化接口 ISerializationCallbackReceiver
-    - blogs
 ---
 
-
-# unity篇-官方序列化接口 ISerializationCallbackReceiver
-标签（空格分隔）： unity
 
 ----------
 [TOC]
