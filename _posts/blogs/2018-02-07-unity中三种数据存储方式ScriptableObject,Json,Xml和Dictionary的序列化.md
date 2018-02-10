@@ -4,7 +4,8 @@ title: unity中三种数据存储方式ScriptableObject,Json,Xml和序列化
 ---
 
 
-##准备
+## 准备
+
 我以Dictionary类型作为案例存储的数据类型，向大家介绍如何将数据序列化，如何将数据存储为ScriptableObject,Json,Xml等形式
 
 这是我个人开发游戏所自定义的数据类型，之后的操作中会使用到
@@ -35,7 +36,8 @@ title: unity中三种数据存储方式ScriptableObject,Json,Xml和序列化
 ```
  private static Dictionary<int, Skill> allSkillDic = new Dictionary<int, Skill>();//allSkillDic是要存储的数据
 ```
-##ScriptableObject
+## ScriptableObject
+
 ###简介
 ScriptableObject是unity自带的一个类，继承于UnityEngine.Object，可用于制作数据配置文件，或编辑器扩展便于可视化编辑，unity会自动将这个继承ScriptableObject的类序列化，可控性弱，但用于数据的加载是效率最高的。
 
