@@ -1,7 +1,8 @@
 ﻿---
 layout: page
 title: 操作系统篇-模拟可变分区存储管理方案中的内存分配c/c++实现
-
+category: 
+    - blogs
 ---
 
 ----------

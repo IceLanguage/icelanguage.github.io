@@ -1,6 +1,8 @@
 ﻿---
 layout: page
 title: 操作系统篇-八大调度算法实现
+category: 
+    - blogs
 ---
 
 

@@ -1,6 +1,8 @@
 ﻿---
 layout: page
 title: Unity单例模式泛型类
+category: 
+    - blogs
 ---
 
 ```

@@ -21,6 +21,8 @@ Input.GetTouch(1).phase == TouchPhase.Moved是手指在移动的意思
 
 接下来通过2手指间距的变换来缩放屏幕
 先获取手指间距
+category: 
+    - blogs
 
 ```
 Touch touch1 = Input.GetTouch(0);

@@ -1,7 +1,8 @@
 ﻿---
 layout: page
 title: unity编辑器扩展篇-快速设置sprite
-
+category: 
+    - blogs
 ---
 
 当导入sprite时，图片总不是我们想要的格式，所以我们每次都需要对Texture的属性进行修改，图片数量多的话的就会特别累，所以写个脚本简化操作岂不是美滋滋

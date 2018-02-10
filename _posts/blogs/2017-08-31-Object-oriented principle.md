@@ -1,6 +1,8 @@
 ﻿---
 layout: page
 title: 七大面向对象设计原则
+category: 
+    - blogs
 ---
 
 **七大面向对象设计原则**

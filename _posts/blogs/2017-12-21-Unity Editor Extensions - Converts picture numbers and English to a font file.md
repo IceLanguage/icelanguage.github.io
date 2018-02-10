@@ -1,6 +1,8 @@
 ﻿---
 layout: page
 title: unity编辑器扩展篇-将图片数字和英文转换成字体文件
+category: 
+    - blogs
 ---
 
 

@@ -1,6 +1,8 @@
 ﻿---
 layout: page
 title: C# A星寻路算法
+category: 
+    - blogs
 ---
 
 ```cs

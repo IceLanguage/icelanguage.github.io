@@ -1,6 +1,8 @@
 ﻿---
 layout: page
 title: union-find算法
+category: 
+    - blogs
 ---
 
 这个算法主要用来判断2点是否连通

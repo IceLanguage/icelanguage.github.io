@@ -1,6 +1,8 @@
 ---
 layout: page
 title: 场景加载环形进度条
+category: 
+    - blogs
 ---
 **UIManager**
 负责UI

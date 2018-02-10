@@ -1,6 +1,8 @@
 ﻿---
 layout: page
 title: 官方序列化接口 ISerializationCallbackReceiver
+category: 
+    - blogs
 ---
 
 ## 简介

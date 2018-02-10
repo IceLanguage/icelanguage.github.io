@@ -1,6 +1,8 @@
 ﻿---
 layout: page
 title: 报错记录Another git process seems to be running in this repository
+category: 
+    - blogs
 ---
 
 这种报错是因为一个项目同时用2个不同的git管理工具或git.exe程序、

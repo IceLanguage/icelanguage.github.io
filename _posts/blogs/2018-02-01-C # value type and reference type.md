@@ -1,6 +1,8 @@
 ﻿---
 layout: page
 title: C#篇-值类型和引用类型
+category: 
+    - blogs
 ---
 
 ----------
