@@ -3,10 +3,7 @@ layout: page
 title: unity中三种数据存储方式ScriptableObject,Json,Xml和序列化
 ---
 
-#~~
 
-----------
-[TOC]
 ##准备
 我以Dictionary类型作为案例存储的数据类型，向大家介绍如何将数据序列化，如何将数据存储为ScriptableObject,Json,Xml等形式
 
