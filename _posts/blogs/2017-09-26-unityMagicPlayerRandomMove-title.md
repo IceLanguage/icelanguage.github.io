@@ -1,8 +1,6 @@
 ---
 layout: page
 title: unity神奇的效果:角色随机移动
-category: 
-    - blogs
 ---
 
 ```cs

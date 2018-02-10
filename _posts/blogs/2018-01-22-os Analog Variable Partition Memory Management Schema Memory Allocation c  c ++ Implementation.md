@@ -1,17 +1,15 @@
 ﻿---
 layout: page
 title: 操作系统篇-模拟可变分区存储管理方案中的内存分配c/c++实现
-    - blogs
+
 ---
-
-# **操作系统篇-模拟可变分区存储管理方案中的内存分配c/c++实现**
-
 
 ----------
 [TOC]
 
 系统根据申请者的要求，按照一定的分配策略分析内存空间的使用情况，找出能满足请求的空闲区，分给申请者；当程序执行完毕或主动归还内存资源时，系统要收回它所占用的内存空间或它归还的部分内存空间，主存分配算法使用最坏适应分配算法。
-##数据结构
+## 数据结构
+
 ```
 //表最大记录数
 const int jobMax = 100;
@@ -34,7 +32,8 @@ Job occupy[jobMax];
 //已分配区计数器
 int occupy_Quantity;
 ```
-##相关函数
+## 相关函数
+
 ```
 //初始化函数
 void Init();
@@ -60,7 +59,8 @@ void worstFit();
 //撤销作业
 void UndoJob();
 ```
-##main
+## main
+
 ```
 int main()
 {
@@ -122,7 +122,8 @@ int main()
     return 0;
 }
 ```
-##最先适应分配算法
+## 最先适应分配算法
+
 ```
 void FF()
 {
@@ -164,7 +165,8 @@ void FF()
 }
 ```
 
-##最优适应分配算法
+## 最优适应分配算法
+
 ```
 void bestFit()
 {
@@ -218,7 +220,8 @@ void bestFit()
 	}
 }
 ```
-##最坏适应分配算法
+## 最坏适应分配算法
+
 ```
 void worstFit()
 {
@@ -273,7 +276,8 @@ void worstFit()
 }
 ```
 
-##取消内存分配
+## 取消内存分配
+
 ```
 void UndoJob()
 {
@@ -341,5 +345,6 @@ void UndoJob()
 }
 ```
 
-##完整代码
+## 完整代码
+
 https://github.com/IceLanguage/OSAlgorithm/tree/master/MemoryAllocation

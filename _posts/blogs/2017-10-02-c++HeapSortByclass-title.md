@@ -1,8 +1,6 @@
 ---
 layout: page
 title: CLRS c++完整堆排序以类结构实现
-category: 
-    - blogs
 
 ---
 
