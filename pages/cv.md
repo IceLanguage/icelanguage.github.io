@@ -12,7 +12,7 @@ header:
 
 |联系方式|      |
 | ---- | ---- |
- 手机号| 13738576895
+ 手机号|暂无强烈的求职需求
    qq  | 845854051
  Email | 845854051@qq.com,13738576895@163.com
  微信号| duguyuanmo
@@ -27,7 +27,7 @@ header:
 |性别     |男 |
 |工作年限 |应届生 |
 |学历     |一本 |
-| 技术博客 |www.millionsmultiplication.top, http://blog.csdn.net/qq_34244317 |
+| 技术博客 |www.millionsmultiplication.top, http://blog.csdn.net/qq_34244317(已弃用) |
 |Github   |https://github.com/IceLanguage |
 |期望职位 |游戏工程师(实习岗) |
 |期望薪资 |税前月薪2k~6k |
