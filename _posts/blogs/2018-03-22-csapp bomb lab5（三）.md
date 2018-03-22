@@ -1,12 +1,12 @@
 ﻿---
 layout: page
-title: 计算机基础篇-bomb lab(三）
+title: 计算机基础篇-bomb lab5(三）
 category: 
     - blogs
 ---
 
 ----------
-The fifth
+第五个，没想到这么简单
 ```
 0000000000401062 <phase_5>:
 401062:       53                      push   %rbx

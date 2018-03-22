@@ -1,6 +1,6 @@
 ﻿---
 layout: page
-title: 计算机基础篇-bomb lab(二）
+title: 计算机基础篇-bomb lab4(二）
 category: 
     - blogs
 ---
