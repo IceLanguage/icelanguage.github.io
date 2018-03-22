@@ -5,7 +5,6 @@ category:
     - blogs
 ---
 
-#csapp bomb lab
 标签（空格分隔）： 计算机基础
 ---
 layout: page
@@ -15,7 +14,7 @@ category:
 ---
 
 ----------
-##The first
+The first
 根据http://csapp.cs.cmu.edu/3e/bomblab.pdf获取信息
 利用objdump -d ./bomb获得各函数的反汇编代码
 发现了phase_1，phase_2，phase_3，phase_4，phase_5，phase_6
@@ -185,7 +184,7 @@ Border relations with Canada have never been better.
 Phase 1 defused. How about the next one?
 ```
 成功了
-##The Second
+The Second
 这里我整个人爆炸了，看https://www.zhihu.com/question/40720890才理解了lea，mov
 lea是计算（地址+偏移）。将计算结果（地址）存储到另一个寄存器
 mov是计算各地址上值后将值存储的到另一个寄存器
@@ -278,7 +277,7 @@ eax*2=*rbx=第三个数的值
 ```
 这个字符串答案是 "1 2 4 8 16 32"
 
-##The Third
+The Third
 ```
 0000000000400f43 <phase_3>:
 400f43:       48 83 ec 18             sub    $0x18,%rsp
