@@ -94,18 +94,31 @@ edi=*rsp+8
 40100b:       c3                      retq
 ```
 将edx赋值给eax，eax减去esi，然后将eax赋值给ecx，ecx逻辑右移31位（也就是说，它在eax小于0时变为1，否则为0）
+
 eax=14
+
 ecx=0
+
 接着将eax加上ecx，然后eax除以2，将eax+esi的值赋给ecx
+
 然后比较edi,ecx=21
+
 eax=7
+
 ecx=7
+
 如果edi<=ecx
+
 eax=0
+
 比较edi ecx
+
 因为edi<=ecx
+
 esi=ecx+1
+
 再次执行func4
+
 eax+=eax
 如果edi>ecx
 ecx=esi+eax
