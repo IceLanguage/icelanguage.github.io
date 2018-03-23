@@ -14,14 +14,22 @@ category:
 ---
 
 ----------
-The first
+## The first
+
 根据http://csapp.cs.cmu.edu/3e/bomblab.pdf获取信息
+
 利用objdump -d ./bomb获得各函数的反汇编代码
+
 发现了phase_1，phase_2，phase_3，phase_4，phase_5，phase_6
+
 刚好和需要验证的字符串数相同
+
 代码也提示了
+
 Welcome to my fiendish little bomb. You have 6 phases with
+
 which to blow yourself up. Have a nice day!
+
 所以phase_1就是第一个爆炸点了
 ```
 0000000000400ee0 <phase_1>:
@@ -36,18 +44,26 @@ which to blow yourself up. Have a nice day!
 ```
 
 通过下面2行汇编代码了解到
+
 strings_not_equal 使用了2个参数用来验证字符串
+
 那么不出意外$0x402400这个地址就是第一个字符串,%esi就是我们的输入
+
 至于explode_bomb从名字看便是爆炸
 
 ```
   400ee4:       be 00 24 40 00          mov    $0x402400,%esi
   400ee9:       e8 4a 04 00 00          callq  401338 <strings_not_equal>
 ```
+
 官方提示必须gdb看到寄存器存储的值，那么就gdb吧
+
 gdb ./bomb
+
 然后打断点
+
 b explode_bomb
+
 b  phase_1
 ```
 Admin@DESKTOP-4CJQTHR:/mnt/c/Windows/System32/ubuntu/csapp/bomb$ gdb ./bomb
@@ -164,8 +180,11 @@ $16 = 0x402400 "Border relations with Canada have never been better."
 (gdb)
 ```
 直接获得了第一个字符串
+
 "Border relations with Canada have never been better."
+
 ？？？我不是加拿大的
+
 测试答案
 打好断点
 ```
@@ -184,11 +203,17 @@ Border relations with Canada have never been better.
 Phase 1 defused. How about the next one?
 ```
 成功了
-The Second
+
+## The Second
 这里我整个人爆炸了，看https://www.zhihu.com/question/40720890才理解了lea，mov
+
+
 lea是计算（地址+偏移）。将计算结果（地址）存储到另一个寄存器
+
 mov是计算各地址上值后将值存储的到另一个寄存器
+
 我可能描述不好，不理解没关系，继续往下看
+
 接下来开始第二个
 ```
 0000000000400efc <phase_2>:
@@ -246,7 +271,9 @@ rbp=&(*rsp+24）//基指针地址
 mov    -0x4(%rbx),%eax 则是 eax =*(rbx-4)//得到第一个数的值，也就是1
 
 接下来就简单了，eax*2= （%rbx）
+
 rbx=2
+
 第二个数是2
 ```
 400f25:       48 83 c3 04             add    $0x4,%rbx
@@ -255,9 +282,13 @@ rbx=2
 400f2e:       eb 0c                   jmp    400f3c <phase_2+0x40>
 ```
 继续破解第三个数
+
 rbx=4
+
 rbx+=4
+
 24=rbp!=rax=8
+
 可以发现这实际上是个循环，遍历这6个数
 ```
 400f25:       48 83 c3 04             add    $0x4,%rbx
@@ -266,7 +297,9 @@ rbx+=4
 400f2e:       eb 0c                   jmp    400f3c <phase_2+0x40>
 ```
 eax=*(rbx-4)//前一个数
+
 eax*2=*rbx=第三个数的值
+
 这样一看答案很明显了，这是个等比数列
 ```
 400f17:       8b 43 fc                mov    -0x4(%rbx),%eax
@@ -277,7 +310,7 @@ eax*2=*rbx=第三个数的值
 ```
 这个字符串答案是 "1 2 4 8 16 32"
 
-The Third
+## The Third
 ```
 0000000000400f43 <phase_3>:
 400f43:       48 83 ec 18             sub    $0x18,%rsp
@@ -341,18 +374,26 @@ $3 = 0x4025cf "%d %d"
 400fad:       e8 88 04 00 00          callq  40143a <explode_bomb>
 ```
 接下来可以从上面2段汇编判断0x7<=%rsp+8，%rsp>=-1
+
 继续执行
+
 eax=*rsp+8
+
 执行 *0x402470(,%rax,8)？？
+
 跳转0x402470+8*%rax？
+
 在看下面一长串move jump，这是switch？
+
 每一个跳转的分支最后都执行
 ```
 400fbe:       3b 44 24 0c             cmp    0xc(%rsp),%eax
   400fc2:       74 05                   je     400fc9 <phase_3+0x86>
 ```
 这是验证是否相等
+
 那么正确答案就挺多了
+
 我随便挑一个,这个好算点
 ```
 取%rax=3    jump     0x402470+0x24              

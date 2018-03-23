@@ -5,13 +5,13 @@ category:
     - blogs
 ---
 
-#csapp Cache labA缓存模拟器
+# csapp Cache labA缓存模拟器
 
 
 开始吧，Bash on Unbuntu on Windows10能运行Cache lab
 （Attack lab因为不能运行被我放弃了，我会说？反正没人会看这篇博文）
 
-##预热
+## 预热
 
 首先按要求输入命令
 可以把访问内存的日志输出到终端
@@ -73,7 +73,7 @@ L 表示数据载入
 
 需要修改的是 csim.c 和 trans.c。编译的时候只需要简单 make clean 和 make，然后就可以进行测试了。
 
-##需要的头文件
+## 需要的头文件
 ```
 #include "cachelab.h"
 #include <stdio.h> /* fopen freopen perror */
@@ -84,13 +84,13 @@ L 表示数据载入
 #include <stdlib.h>/* atol exit*/
 #include <errno.h>  /* errno */
 ```
-##宏定义
+## 宏定义
 ```
 #define MAGIC_LRU_NUM 999
 #define false 0
 #define true 1
 ```
-##定义数据结构
+## 定义数据结构
 首先根据官方ppt(https://github.com/IceLanguage/csapp/blob/master/cachelab-handout/cachelab-ppt.pptx)16页给出的信息，在 csim.c 构建数据结构
 ```
 A cache is just 2D array of cache lines:
@@ -123,14 +123,14 @@ typedef struct {
     Set* sets;      //模拟cache
 } MyCache;
 ```
-##主函数和宏定义
+## 主函数和宏定义
 main需要写成如下形式，参考ppt20页
 ```
 int main(int argc,char **argv)
 {
 }
 ```
-##程序逻辑
+## 程序逻辑
 
 1.首先从命令中拿到所需的参数
 
@@ -139,12 +139,12 @@ int main(int argc,char **argv)
 3.进行 cache 的存储
 
 4.printSummary
-##LRU算法原理
+## LRU算法原理
 
 找到最近最久未使用的那个页面调出内存
 我的程序维护一个LRU_num达成LRU算法的实现
 
-##完整代码
+## 完整代码
 
 ```
 #include "cachelab.h"
@@ -385,7 +385,7 @@ int main(int argc,char **argv)
 
 
 ```
-##结果
+## 结果
 ```
 Admin@DESKTOP-4CJQTHR:/mnt/c/Windows/System32/ubuntu/csapp/cachelab-handout$ ./test-csim
                         Your simulator     Reference simulator
@@ -402,7 +402,7 @@ Points (s,E,b)    Hits  Misses  Evicts    Hits  Misses  Evicts
 
 TEST_CSIM_RESULTS=27
 ```
-##参考博客
+## 参考资料
 
 https://blog.csdn.net/u012336567/article/details/51899136
 
