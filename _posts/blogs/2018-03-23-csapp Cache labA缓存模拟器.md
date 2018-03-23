@@ -5,7 +5,6 @@ category:
     - blogs
 ---
 
-# csapp Cache labA缓存模拟器
 
 
 开始吧，Bash on Unbuntu on Windows10能运行Cache lab
