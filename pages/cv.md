@@ -27,7 +27,7 @@ header:
 |性别     |男 |
 |工作年限 |应届生 |
 |学历     |一本 |
-| 技术博客 |www.millionsmultiplication.top, http://blog.csdn.net/qq_34244317(已弃用) |
+| 技术博客 |www.millionsmultiplication.top |
 |Github   |https://github.com/IceLanguage |
 |期望职位 |游戏工程师(实习岗) |
 |期望薪资 |税前月薪2k~6k |
