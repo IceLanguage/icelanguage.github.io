@@ -1,11 +1,4 @@
-﻿---
-layout: page
-title: 计算机基础篇-bomblab(一)
-category: 
-    - blogs
----
-
-标签（空格分隔）： 计算机基础
+﻿
 ---
 layout: page
 title: 计算机基础篇-bomb lab123(一）1,2,3
