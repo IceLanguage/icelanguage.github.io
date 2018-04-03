@@ -4,7 +4,9 @@
 
 ---
 
-  ！[conv_ops](https://d26dzxoao6i3hh.cloudfront.net/items/0m0D3a2Z0j2v3u320145/conv_ops.gif?v=9ad8eed7)
+插入视频代码：<iframe height=498 width=510 src="http://player.youku.com/embed/XNjcyMDU4Njg0">
 
+
+插入gif代码：<iframe height=500 width=500 src="http://ww4.sinaimg.cn/mw690/e75a115bgw1f3rrbzv1m8g209v0diqv7.gif">
 
 
