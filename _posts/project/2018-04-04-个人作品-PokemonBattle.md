@@ -1,6 +1,11 @@
-﻿# 个人作品-PokemonBattle
+﻿
+---
+layout: page
+title: 个人作品PokemonBattle
+category: 
+    - project
+---
 
-标签（空格分隔）： 个人作品
 
 ---
 ## 游戏介绍
