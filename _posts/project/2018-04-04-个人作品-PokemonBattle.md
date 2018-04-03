@@ -1,13 +1,11 @@
-﻿
----
+﻿---
 layout: page
 title: 个人作品PokemonBattle
 category: 
     - project
 ---
 
-
----
+----------
 ## 游戏介绍
 以实现口袋妖怪对战系统为目的开发的实时对战游戏游戏。
 
