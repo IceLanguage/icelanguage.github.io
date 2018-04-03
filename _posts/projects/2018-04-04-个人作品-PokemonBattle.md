@@ -3,7 +3,7 @@
 layout: page
 title: 个人作品PokemonBattle
 category: 
-    - project
+    - projects
 ---
 
 ----------
