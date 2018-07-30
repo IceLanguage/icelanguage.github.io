@@ -26,7 +26,7 @@ PokemonBattle是一款完全由我个人独立开发，基于Unity+C#+Entitas-CS
 
 - 基于Github上的TTUIFramework框架和UGUI开发MVC模式的UI模块
 - 基于Entitas的ECS架构开发数据更新模块
-- 基于流水线式的设计以及协程开发回合值战斗模块
+- 基于流水线式的设计以及协程开发回合制战斗模块
 - 使用EPPlus，JsonNet 工具加载和存储相关数据
 - 使用assetbundle browser工具打包ScriptObject资源
 - 使用DoTween开发UI动画和精灵捕捉动画
