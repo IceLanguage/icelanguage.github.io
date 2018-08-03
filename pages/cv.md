@@ -1,7 +1,7 @@
 ---
 layout: page
 show_meta: false
-title: "林豪 Icelanguage"
+title: "林豪的简历"
 subheadline: "简历"
 permalink: "/cv/"
 header:
@@ -10,7 +10,7 @@ header:
 
 
 
-# 林豪的简历
+# 
 
 ------
 
@@ -31,7 +31,7 @@ header:
 
 ## 技能树
 
-1. 熟悉c#，会使用c++，javascript；
+1. 熟悉c#，c++，了解javascript；
 2. 熟悉面向对象程序设计，了解实体组件系统（Entitas-CSharp）
 3. 熟练使用unity，git，Visual Studio等工具;
 4. 使用过UGUI，DoTween等Unity插件
@@ -83,9 +83,7 @@ https://github.com/IceLanguage/LinHowe_GameAlgorithm
 
 ## 个人评价
 
-热爱技术，责任心重，自律能力强、自学能力强，有良好的自我认知，开阔的视野以及良好的心态;
-
-性格：老实人
+个人极度痴迷游戏开发技术，图形渲染技术等3d开发技术，我能迅速投入到工作中，在工作尽情挥洒自己的热情和激情。同时我性格比较老实，责任心重，自律能力强、自学能力强，有良好的自我认知，开阔的视野以及良好的心态，不会给团队造成过多的麻烦
 
 ## 职业规划
 
