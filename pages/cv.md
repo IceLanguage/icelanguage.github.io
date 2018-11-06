@@ -72,7 +72,7 @@ LinHowe_GameAlgorithm是个人独立开发的开源项目，**github star数达1
 
 对诸多游戏常用算法进行实际代码的编写，加强理解
 
-#### 源码下载地址
+#### 源码
 
 https://github.com/IceLanguage/LinHowe_GameAlgorithm
 
@@ -80,9 +80,17 @@ https://github.com/IceLanguage/LinHowe_GameAlgorithm
 
 LinHowe_CSharp_Render是我为学习计算机图形学开发的小玩具，模拟了渲染管线流水线，实现基本的模型视图投影变换，顶点光照和像素着色
 
-#### 源码下载地址
+#### 源码
 
 https://github.com/IceLanguage/LinHowe_CSharp_Render
+
+### 四、水渲染
+
+实现了波动方程，光照模型，反射，菲涅尔，水下体积光，阴影，浮力
+
+#### 源码
+
+https://github.com/IceLanguage/LinHowe_WaterRendering
 
 ## 职业规划
 
