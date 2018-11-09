@@ -21,10 +21,9 @@ header:
 |  期望职位  | 游戏研发工程师                                               |
 |  技术博客  | https://www.millionsmultiplication.top ；https://blog.csdn.net/qq_34244317 |
 | **Github** | https://github.com/IceLanguage;                              |
-|  联系方式  | 手机号:13738576895;   qq号:845854051;  微信号:duguyuanmo;    |
+|  联系方式  | qq号:845854051;  微信号:duguyuanmo;                          |
 |    邮箱    | icelanguage@foxmail.com，13738576895@163.com                 |
 | 学校所在地 | 杭州                                                         |
-|   身份证   | 331081199708036751                                           |
 
 ## 技能树
 
