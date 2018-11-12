@@ -5,7 +5,7 @@ title: "林豪的简历"
 subheadline: "简历"
 permalink: "/cv/"
 header:
-    image_fullwidth: front04.jpg
+    image_fullwidth: 599e80b6835ee.jpg
 ---
 
 
