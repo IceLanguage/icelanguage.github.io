@@ -62,6 +62,14 @@ include: ['.htaccess']
 
 kramdown:
   input: GFM
+  extensions:
+    - autolink
+    - footnotes
+    - smart
+  use_coderay: true
+  syntax_highlighter: rouge
+  coderay:
+    coderay_line_numbers:  nil
 
 # The language setting is used in /includes/header.html for html-settings
 language: "en"
