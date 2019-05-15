@@ -14,9 +14,9 @@ category:
 
 线性方程组 
 
-$\left\{ \begin{matrix}2 * x - y =3 \\-x  + 2 * y = 6\end{matrix}\right\}​$​
+$ \begin{matrix}2 * x - y =3 \\-x  + 2 * y = 6\end{matrix}$​
 
-可以转换成形如 $A \times x=b$ 的矩阵矢量形式，转换结果如下
+可以转换成形如 $A \times x=b​$ 的矩阵矢量形式，转换结果如下
 
 $\left[
 \begin{matrix}
@@ -25,15 +25,15 @@ $\left[
 \end{matrix}
 \right] \left[
 \begin{matrix}
-x \\
+x \\\
 y 
 \end{matrix}
 \right]  = \left[
 \begin{matrix}
-3 \\
+3 \\\
 6
 \end{matrix}
-\right] ​$
+\right] $
 
 其中A是系统矩阵，x 为所求解，b是一个矢量，也就是线性方程的常数项
 
@@ -41,7 +41,7 @@ y
 
 ## 高斯消元法
 
-求解线性方程组我们通常使用[高斯消元法](https://en.wikipedia.org/wiki/Gaussian_elimination)来求解逆矩阵，这种方法虽然足够直接，然而把高斯消元法作为一种算法来看待，这种算法的时间复杂度达到了惊人的 $O(n^3)$,n是矩阵的尺寸，由此我们可以明确高斯消元法并不适合有着许多数值问题的较大系统。
+求解线性方程组我们通常使用[高斯消元法](https://en.wikipedia.org/wiki/Gaussian_elimination)来求解逆矩阵，这种方法虽然足够直接，然而把高斯消元法作为一种算法来看待，这种算法的时间复杂度达到了惊人的 $O(n^3)​$,n是矩阵的尺寸，由此我们可以明确高斯消元法并不适合有着许多数值问题的较大系统。
 
 如果不选用高斯消元法直接求解逆矩阵，如果不通过高斯消元法，我们又该通过什么方法计算逆矩阵呢？《Fluid Engine Development》给出了就4种不那么直接的方法。通过对解的猜测和多次迭代得到近似解
 
@@ -65,16 +65,16 @@ Gauss-Seidel方法和jacobi方法有些像
 
 $\left[
 \begin{matrix}
-2 & -1 \\
+2 & -1 \\\
 -1 & 2 
 \end{matrix}
 \right]= \left[
 \begin{matrix}
-2 & 0 \\
+2 & 0 \\\
 -1 & 2
 \end{matrix}
 \right]+ \left[
-\begin{matrix}0 & -1 \\
+\begin{matrix}0 & -1 \\\
 0 & 0
 \end{matrix}
 \right] ​$
@@ -95,7 +95,7 @@ $x^{(k+1)}_i  = \frac{1}{a_{ii}} \left(b_i - \sum_{j=1}^{i-1}a_{ij}x^{(k+1)}_j -
 
 梯度下降法将线性方程组求解问题转换成求解最小值问题
 
- $F(x) = |Ax - b|^{2}$
+ $F(x) ={ |Ax - b|}^{2}$
 
 如果x有解，则F(x) = 0,如果无解，则可以一直迭代直到x有解，
 
