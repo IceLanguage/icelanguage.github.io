@@ -83,11 +83,13 @@ $\left[
 
 $  x^{(k+1)}_1  ​$
 
-$ \frac{1}{a_{11}} \left(b_1 -\sum_{j>1}a_{1j}x^{(k)}_j\right)$
+$ =\frac{1}{a_{11}} \left(b_1 -\sum_{j>1}a_{1j}x^{(k)}_j\right)$
 
-$ \left(b_1 -\sum_{j>1}a_{1j}x^{(k)}_j\right)$
+$ \left(b_1 -\sum_{j>1}a_{1j}x^{(k)}_j\right)​$
 
-$\sum_{j>1}a_{1j}x^{(k)}$
+$\sum_{j>1}a_{1j}x^{(k)}​$
+
+$ x^{(k+1)}_1  =   \frac{1}{a_{11}} \left(b_1 -\sum_{j>1}a_{1j}x^{(k)}_j\right)​$
 
 $ x^{(k+1)}_1  = \frac{1}{a_{11}} \left(b_1 -\sum_{j>1}a_{1j}x^{(k)}_j\right)​$
 
