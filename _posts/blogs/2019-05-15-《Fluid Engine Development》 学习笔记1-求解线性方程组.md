@@ -81,15 +81,15 @@ $\left[
 
 通过这种形式的转换我们可以轻易的发现解的第一个元素能轻易的被计算出来
 
-$ x^{(k+1)}_1  = \frac{1}{a_{11}} \left(b_1 -\sum_{j>1}a_{1j}x^{(k)}_j\right)$
+$  x^{(k+1)}_1  = \frac{1}{a_{11}} \left(b_1 -\sum_{j>1}a_{1j}x^{(k)}_j\right) ​$
 
 将上式代入第二行，我们可以得到
 
-$ x^{(k+1)}_2  = \frac{1}{a_{22}} \left(b_i -a_{21}x_{1} ^{k+1}-\sum_{j>1}a_{1j}x^{(k)}_j\right)$
+$x^{(k+1)}_2  = \frac{1}{a_{22}} \left(b_i -a_{21}x_{1} ^{k+1}-\sum_{j>1}a_{1j}x^{(k)}_j\right)$
 
 然后可以得到同样的迭代解 
 
-$x^{(k+1)}_i  = \frac{1}{a_{ii}} \left(b_i - \sum_{j=1}^{i-1}a_{ij}x^{(k+1)}_j - \sum_{j=i+1}^{n}a_{ij}x^{(k)}_j \right),\quad i=1,2,\dots,n.$
+$x^{(k+1)}_i  = \frac{1}{a_{ii}} \left(b_i - \sum_{j=1}^{i-1}a_{ij}x^{(k+1)}_j - \sum_{j=i+1}^{n}a_{ij}x^{(k)}_j \right),\quad i=1,2,\dots,n.​$
 
 ## 梯度下降法
 
