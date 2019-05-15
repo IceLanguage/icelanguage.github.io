@@ -14,7 +14,7 @@ category:
 
 线性方程组 
 
-$ \begin{matrix}2 * x - y =3 \\-x  + 2 * y = 6\end{matrix}$​
+$ \begin{matrix}2 * x - y =3 \\-x  + 2 * y = 6\end{matrix}​$​
 
 可以转换成形如 $A \times x=b​$ 的矩阵矢量形式，转换结果如下
 
@@ -81,7 +81,15 @@ $\left[
 
 通过这种形式的转换我们可以轻易的发现解的第一个元素能轻易的被计算出来
 
-$  x^{(k+1)}_1  $
+$  x^{(k+1)}_1  ​$
+
+$ \frac{1}{a_{11}} \left(b_1 -\sum_{j>1}a_{1j}x^{(k)}_j\right)$
+
+$ \left(b_1 -\sum_{j>1}a_{1j}x^{(k)}_j\right)$
+
+$\sum_{j>1}a_{1j}x^{(k)}$
+
+$ x^{(k+1)}_1  = \frac{1}{a_{11}} \left(b_1 -\sum_{j>1}a_{1j}x^{(k)}_j\right)​$
 
 将上式代入第二行，我们可以得到
 
