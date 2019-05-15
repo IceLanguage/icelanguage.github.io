@@ -93,9 +93,11 @@ $ \frac{1}{a_{22}} \left(b_i -a_{21}x_{1} ^{k+1}-\sum_{j>1}a_{1j}x^{(k)}_j\right
 
 然后可以得到同样的迭代解 
 
-$x^{(k+1)}_i  $
+$x^{(k+1)}_i  ​$
 
-$= \frac{1}{a_{ii}} \left(b_i - \sum_{j=1}^{i-1}a_{ij}x^{(k+1)}_j - \sum_{j=i+1}^{n}a_{ij}x^{(k)}_j \right),\quad i=1,2,\dots,n.​$
+$= \frac{1}{a_{ii}} \left(b_i - \sum_{j=1}^{i-1}a_{ij}x^{(k+1)}_j - \sum_{j=i+1}^{n}a_{ij}x^{(k)}_j \right)$
+
+$,\quad i=1,2,\dots,n.​$
 
 ## 梯度下降法
 
