@@ -12,10 +12,9 @@ category:
 
 ## 线性方程组
 
-线性方程组 $\left\{ \begin{matrix}
-2 * x - y =3 \\
--x  + 2 * y = 6
-\end{matrix}\right\}​$​
+线性方程组 
+
+$\left\{ \begin{matrix}2 * x - y =3 \\-x  + 2 * y = 6\end{matrix}\right\}$​
 
 可以转换成形如 $A \times x=b$ 的矩阵矢量形式，转换结果如下
 
@@ -54,13 +53,13 @@ y
 
 所以易得解${x}^{(k+1)} = D^{-1} (\mathbf{b} - R \mathbf{x}^{(k)})$ k是迭代的次数
 
-同样作为矢量的解的每一个元素可以通过$ x^{(k+1)}_i  = \frac{1}{a_{ii}} \left(b_i -\sum_{j\ne i}a_{ij}x^{(k)}_j\right),\quad i=1,2,\ldots,n.$计算得到
+同样作为矢量的解的每一个元素可以通过$ x^{(k+1)}_i  = \frac{1}{a_{ii}} \left(b_i -\sum_{j\ne i}a_{ij}x^{(k)}_j\right),\quad i=1,2,\ldots,n.​$计算得到
 
 ## Gauss-Seidel法
 
 Gauss-Seidel方法和jacobi方法有些像
 
-将$A \times x=b$ 转换成 $（L + U） \times x=b$ （矩阵A被拆成包含对角部分的下三角形和又矩阵A上三角形部分构成的矩阵U）
+将$A \times x=b​$ 转换成 $（L + U） \times x=b​$ （矩阵A被拆成包含对角部分的下三角形和又矩阵A上三角形部分构成的矩阵U）
 
 具体如下
 
@@ -82,21 +81,27 @@ $\left[
 
 通过这种形式的转换我们可以轻易的发现解的第一个元素能轻易的被计算出来
 
-$ x^{(k+1)}_1  = \frac{1}{a_{11}} \left(b_1 -\sum_{j>1}a_{1j}x^{(k)}_j\right)$
+$ x^{(k+1)}_1  = \frac{1}{a_{11}} \left(b_1 -\sum_{j>1}a_{1j}x^{(k)}_j\right)​$
 
-将上式代入第二行，我们可以得到$ x^{(k+1)}_2  = \frac{1}{a_{22}} \left(b_i -a_{21}x_{1} ^{k+1}-\sum_{j>1}a_{1j}x^{(k)}_j\right)$
+将上式代入第二行，我们可以得到
 
-然后可以得到同样的迭代解 $x^{(k+1)}_i  = \frac{1}{a_{ii}} \left(b_i - \sum_{j=1}^{i-1}a_{ij}x^{(k+1)}_j - \sum_{j=i+1}^{n}a_{ij}x^{(k)}_j \right),\quad i=1,2,\dots,n.$
+$ x^{(k+1)}_2  = \frac{1}{a_{22}} \left(b_i -a_{21}x_{1} ^{k+1}-\sum_{j>1}a_{1j}x^{(k)}_j\right)$
+
+然后可以得到同样的迭代解 
+
+$x^{(k+1)}_i  = \frac{1}{a_{ii}} \left(b_i - \sum_{j=1}^{i-1}a_{ij}x^{(k+1)}_j - \sum_{j=i+1}^{n}a_{ij}x^{(k)}_j \right),\quad i=1,2,\dots,n.$
 
 ## 梯度下降法
 
-梯度下降法将线性方程组求解问题转换成求解最小值问题 $F(x) = |Ax - b|^{2}$
+梯度下降法将线性方程组求解问题转换成求解最小值问题
+
+ $F(x) = |Ax - b|^{2}$
 
 如果x有解，则F(x) = 0,如果无解，则可以一直迭代直到x有解，
 
 如果从x1开始，沿着梯度下降，逐步迭代来靠近零点
 
-![1557900682959](<https://raw.githubusercontent.com/IceLanguage/icelanguage.github.io/master/images/FoxitPhantomPDF_2019-05-15_14-11-18.png)
+![1557900682959](https://raw.githubusercontent.com/IceLanguage/icelanguage.github.io/master/images/FoxitPhantomPDF_2019-05-15_14-11-18.png)
 
 ## 共轭梯度法
 
