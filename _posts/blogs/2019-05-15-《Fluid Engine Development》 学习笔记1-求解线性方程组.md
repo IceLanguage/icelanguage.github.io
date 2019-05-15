@@ -14,13 +14,13 @@ category:
 
 线性方程组 
 
-$\left\{ \begin{matrix}2 * x - y =3 \\-x  + 2 * y = 6\end{matrix}\right\}$​
+$\left\{ \begin{matrix}2 * x - y =3 \\-x  + 2 * y = 6\end{matrix}\right\}​$​
 
 可以转换成形如 $A \times x=b$ 的矩阵矢量形式，转换结果如下
 
 $\left[
 \begin{matrix}
-2 & -1 \\
+2 & -1 \\\
 -1 & 2 
 \end{matrix}
 \right] \left[
