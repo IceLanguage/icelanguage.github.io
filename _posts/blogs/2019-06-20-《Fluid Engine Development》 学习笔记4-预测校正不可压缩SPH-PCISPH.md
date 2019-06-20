@@ -220,7 +220,7 @@ void CalfFluidEngine::PCISPHSolver3::accumulatePressureForce(double timeStepInSe
 然后泰勒展开可得 $\rho_{t+\Delta t} = m\sum_{j} W(r_{ij} (t) )+ \nabla W(r_{ij}(t)) \cdot \Delta r_{ij}(t) = \rho_{i}(t) + \Delta \rho_{i}(t)​$
 可求得密度增量为$\Delta \rho_{i}(t) =m \sum_{j}\nabla W(r_{ij}(t))  \cdot \Delta r_{ij}(t)= m \sum_{j} \nabla W(r_{ij}(t)) \cdot (\Delta x_{i}(t) - \Delta x_{j}(t)) $
 
-$= m (\Delta x_{i}(t)\sum _{j}\nabla W_{ij}$
+$ = m (\Delta x_{i}(t)\sum _{j}\nabla W_{ij} $
 
 $ - \sum_{j}\nabla W_{ij}\Delta x_{j}(t)) $
 
